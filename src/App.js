@@ -5,6 +5,7 @@ import "./App.css";
 import Mycomponent from "./components/Mycomponent";
 import Heading from "./components/Heading";
 import Footer from "./components/Footer";
+import ClassComponent from "./components/ClassComponent";
 
 function App() {
   return (
@@ -24,13 +25,25 @@ function App() {
           >
             Impara react
           </a>
+          <ClassComponent content="contentuno del componente a classi" />
+          <ClassComponent content="contentuno del componente a classi 2" />
           <Mycomponent />
           <Mycomponent eleonora="testo in latino " />
         </header>
         <footer>
-          <Footer title="About Us" />
-          <Footer title="Work with us" />
-          <Footer title="P. IVA 4567678" />
+          <Footer
+            title="About Us"
+            content="footer 1"
+            color="lightblue"
+            bg="darkblue"
+          />
+          <Footer title="Work with us" content="footer 2" color="blue" />
+          <Footer
+            title="P. IVA 4567678"
+            content="footer 3"
+            color="darkblue"
+            bg="lightblue"
+          />
         </footer>
       </div>
     </>
