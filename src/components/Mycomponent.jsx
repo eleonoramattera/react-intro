@@ -1,8 +1,13 @@
+import Button from "./Button";
+
 const Mycomponent = (props) => {
   return (
     <div>
       <h1> Titolo</h1>
-      <h2> Titolo secondario</h2>
+      <h2>
+        {" "}
+        <Button button="props.button"> </Button>
+      </h2>
       <div>
         <p>
           {" "}

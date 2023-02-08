@@ -6,12 +6,17 @@ import Mycomponent from "./components/Mycomponent";
 import Heading from "./components/Heading";
 import Footer from "./components/Footer";
 import ClassComponent from "./components/ClassComponent";
+import Input from "./components/Input";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Heading />
+        <Heading
+          id={1}
+          label="NOME"
+          placeholder="inserisci il tuo nome per accedere"
+        />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -27,8 +32,13 @@ function App() {
           </a>
           <ClassComponent content="contentuno del componente a classi" />
           <ClassComponent content="contentuno del componente a classi 2" />
-          <Mycomponent />
+          <Mycomponent button="PREMI SUL BOTTONE" />
           <Mycomponent eleonora="testo in latino " />
+          <Input
+            id={2}
+            label="NUMERO"
+            placeholder="Inserici il tuo numero e sarai contattato"
+          />
         </header>
         <footer>
           <Footer
